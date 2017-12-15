@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+
+  web:
+    volumes:
+      - ./public:/var/www/html:cached
+      - ./vendor:/var/www/vendor:cached
+
+  app:
+    volumes:
+      - ./:/app:cached
